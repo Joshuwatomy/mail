@@ -1,11 +1,7 @@
 import datetime
 import logging
 import os
-import socks
 import smtplib
-# Setup SOCKS proxy
-socks.setdefaultproxy(socks.SOCKS5, "socks5h://gate.smartproxy.com", 10000)
-
 # Patch the socket module
 socks.wrapmodule(smtplib)
 import pdfkit
