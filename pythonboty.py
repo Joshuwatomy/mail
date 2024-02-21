@@ -2,10 +2,7 @@ import datetime
 import logging
 import os
 import smtplib
-# Patch the socket module
-socks.wrapmodule(smtplib)
 import pdfkit
-import socks
 import smtplib
 import io
 import pdfkit
